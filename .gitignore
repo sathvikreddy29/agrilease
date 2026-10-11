@@ -1,0 +1,63 @@
+# ===================================================================
+# Git Ignore - Agricultural Land Lease Management System
+# ===================================================================
+
+# --- Operating System Files ---
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# --- Frontend Build Artifacts & Dependencies ---
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.env.local
+frontend/.env.*.local
+frontend/*.log
+node_modules/
+dist/
+
+# --- Backend Build Artifacts & Binaries ---
+target/
+backend/target/
+*.class
+*.jar
+*.war
+*.ear
+
+# --- Local H2 Database Files ---
+data/
+backend/data/
+*.mv.db
+*.trace.db
+
+# --- Environment Secrets & Credentials ---
+.env
+backend/.env
+frontend/.env
+
+# --- IDE & Editor Metadata ---
+.idea/
+*.iml
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.project
+.classpath
+.settings/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# --- Logs ---
+logs/
+backend/logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
